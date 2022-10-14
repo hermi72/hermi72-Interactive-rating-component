@@ -1,0 +1,192 @@
+:root {
+    /*Primary*/
+    --orange: hsl(25, 97%, 53%);
+
+    /*Neutral*/
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsla(216, 12%, 54%, 0.275);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    --white: #ffff;
+
+    /*Font*/
+    --overpass: 'Overpass', sans-serif;
+}
+
+/*Font*/
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: var(--overpass);
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+  /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+  ul[role="list"],
+  ol[role="list"] {
+    list-style: none;
+  }
+  
+  /* Set core root defaults */
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+  
+  /* Set core body defaults */
+  body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    background-color: var(--very-dark-blue);
+  }
+
+.card-component, .card-component2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 22rem;
+    background-color: var(--dark-blue);
+    place-content: center;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+.card-content {
+    padding: 30px;
+}
+
+.star-icon {
+    background-color: var(--medium-grey);
+    padding: 10px;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    background-image: url("./images/icon-star.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.headline {
+    color: var(--white);
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.text {
+    color: var(--light-grey);
+    font-size: .75rem;
+    font-weight: bold;
+    line-height: 1.2rem;
+    margin-bottom: 1.4rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.4rem;
+}
+
+.flex > button {
+    background-color: var(--medium-grey);
+    border: none;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    color: var(--light-grey);
+    cursor: pointer;
+    transition: ease .3s;
+}
+
+.flex > button:hover {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.flex > button:focus {
+    background-color: var(--light-grey);
+    color: var(--white);
+}
+
+.btn-submit {
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--orange);
+    color: var(--white);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    height: 2.3rem;
+    font-size: .7rem;
+    cursor: pointer;
+    transition: ease .3s;
+}
+
+.btn-submit:hover {
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+
+/*Submit Page*/
+
+.center-content {
+    text-align: center;
+}
+
+.illustration {
+    margin-bottom: 1.5rem;
+}
+
+.rating {
+    background-color: var(--medium-grey);
+    color: var(--orange);
+    padding: 5px 15px;
+    font-size: .9rem;
+    border-radius: 15px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/*Footer*/
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    text-align: center;
+    color: #ffff;
+    font-weight: bold;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
